@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Angora Fuzzer</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="author" content="spinpx" />
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="logo">Angora Fuzzer</div>
+    </header>
+    <hr class="sp-line" />
+    <div id="intro">
+        <h2 class="smallcap">About</h2>
+        <p>
+            Angora is a mutation-based fuzzer. The main goal of Angora is to increase branch coverage by solving path constraints without
+            symbolic execution.
+        </p>
+    </div>
+    <hr class="sp-line" />
+    <div id="souce">
+        <h2 class="smallcap">Source Code</h2>
+        <p>
+            We will release the code in the future.
+        </p>
+    </div>
+    <hr class="sp-line" />
+    <div id="publications">
+        <h2 class="smallcap">Publications</h2>
+        <div id="bibtex_display">
+            <div class="if bibtex_template" style="display: none;">
+                <span class="if title">
+                    <span class="if !nolink">
+                        <a class="bibtexVar" href="papers/+BIBTEXKEY+.pdf" extra="BIBTEXKEY">
+                            <span style="text-decoration: underline;" class="title"></span>,
+                        </a>
+                    </span>
+                    <span class="if nolink">
+                        <span class="title"></span>,
+                    </span>
+                </span>
+
+
+                <div class="if author">
+                    <span class="author"></span>
+                </div>
+                <div>
+                    <span class="if journal">
+                        <em>
+                            <span class="journal"></span>
+                        </em>,</span>
+                    <span class="if booktitle">In
+                        <em>
+                            <span class="booktitle"></span>
+                        </em>,</span>
+                    <span class="if editor">
+                        <span class="editor"></span> (editors),</span>
+                    <span class="if publisher">
+                        <em>
+                            <span class="publisher"></span>
+                        </em>,</span>
+                    <span class="if !journal number">Technical report
+                        <span class="number"></span>,</span>
+                    <span class="if institution">
+                        <span class="institution"></span>,</span>
+                    <span class="if address">
+                        <span class="address"></span>,</span>
+                    <span class="if volume">
+                        <span class="volume"></span>,</span>
+                    <span class="if journal number">(
+                        <span class="number"></span>),</span>
+                    <span class="if pages"> pages
+                        <span class="pages"></span>,</span>
+                    <span class="if month">
+                        <span class="month"></span>,</span>
+                    <span class="if year">
+                        <span class="year"></span>.</span>
+                    <span class="if note">
+                        <span class="note"></span>.</span>
+                    <a class="bibtexVar bib-button" role="button" href="#bib+BIBTEXKEY+" data-toggle="bib+BIBTEXKEY+" extra="BIBTEXKEY">
+                        [bib]
+                    </a>
+                </div>
+                <div class="bibtexVar bib-raw-content" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
+                    <div class="well">
+                        <pre><span class="bibtexraw noread"></span></pre>
+                    </div>
+                </div>
+                <div style="display:none">
+                    <span class="bibtextype"></span>
+                </div>
+            </div>
+        </div>
+      
+        <hr class="sp-line" />
+        <div id="team">
+            <h2 class="smallcap">Team</h2>
+            <ul id="team-list">
+                <li>
+                    <a target="_blank" href="https:/spinpx.com">Peng Chen</a> (Project Founder)</li>
+                <li>
+                    <a target="_blank" href="http://web.cs.ucdavis.edu/~hchen/">Hao Chen</a> (Faculty Advisor)</li>
+            </ul>
+        </div>
+</body>
+
+<textarea id="bibtex_input" style="display:none;">
+        @InProceedings{Chen2018Angora,
+          author = 	 {Peng Chen, Hao Chen},
+          title = 	 {Angora: efficient fuzzing by principled search},
+          booktitle = {IEEE Symposium on Security and Privacy (S&P)},
+          year= {2018},
+          month= {5},
+          date = 	 {2018-05-21/2018-05-23},
+          address = {San Francisco, CA},
+          OPTannote = 	 {10.0\%}
+        }
+        
+</textarea>
+
+<script type="text/javascript" src="./jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="./bibtex.js"></script>
+
+<script>
+    $('#publications').on('click', 'a.bib-button', function () {
+        var key = "#" + $(this).data("toggle");
+        $(key).toggle("fast", function () {
+        });
+    });
+</script>
+
+</html>

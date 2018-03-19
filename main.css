@@ -1,0 +1,197 @@
+html {
+    text-align: center;
+    background: #F8F8FA;
+    font-family: 'Nunito', Avernir, TFangsong, FangSong, FangSong_GB2312, serif;
+}
+
+body {
+    width: 45em; 
+    display: inline-block; 
+    text-align: left;
+}
+
+a {
+    color: #387AD1;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    line-height: 2em;
+}
+
+#container {
+    list-style: none;
+    margin: 0.8em 0.5em;
+}
+
+header {
+    padding-top: 0.5em;
+}
+
+#logo {
+    padding: 0.2em 0;
+    font-size: 2.8em;
+    color: #555;
+    height: 1.3em;
+    display: inline-block;
+}
+
+#logo img {
+   height: 100%;
+}
+
+#logo i {
+    font-weight: bold;
+    display: inline-block;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    padding: 0 0.1em;
+}
+
+.sp-line {
+    border-bottom: 0px dashed #fff;
+    border-top: 1px dashed #ccc;
+    margin: 0.5em 0;
+}
+
+h2 {
+    margin: 0.25em 0;
+    color: #444;
+    font-weight: 600;
+}
+
+h3 {
+    color: #555;
+    font-weight: 600;
+}
+
+.smallcap {
+    text-transform: lowercase;
+    font-variant: small-caps;
+}
+
+.smallcap::first-letter {
+    text-transform: uppercase;
+}
+
+#intro p{
+    margin: 0.8em 0.5em;
+}
+
+p {
+    color: #333;
+}
+
+#tags-nav a{
+  white-space: pre-wrap;
+  color: #555;
+  border: 1px dashed #999;
+  padding: 0.1em 0.2em;
+  margin: 0.12em;
+  display: inline-block;
+}
+
+#tags-nav .current{
+   border: 1px solid #333;
+   color: #333;
+
+}
+
+#tags-nav a:hover {
+   text-decoration: none;
+   background-color: #ddd;
+}
+
+#tags-nav {
+    margin-bottom: 0.5em;
+    word-wrap: break-word;
+}
+
+#gist-list .gist-tags {
+    margin-left:0.5em;
+    background-color: #ddd;
+}
+
+footer {
+    font-size: 0.9em;
+    color: #555;
+    padding: 0;
+    bottom: 0;
+}
+
+#links {
+    padding-bottom: 0.3em;
+}
+
+
+#personal {
+    display: inline-block;
+    float: right;
+    list-style-type: none;
+    font-size: 0.9em;
+    color: #444;
+    margin-top: 1.8em;
+    margin-bottom: 0;
+}
+
+#personal li {
+    text-align: right;
+    line-height: 1.5em;
+}
+
+#name-en b {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#name-cn {
+    margin-left: 1em;
+}
+
+.bib-raw-content {
+    display: none;
+}
+.well {
+    margin: 0.1em;
+    padding: 0.1em 1em;
+    background-color: #FFF;
+}
+
+.bibtexentry {
+    margin: 1em 0;
+}
+
+.pj-entry h3 {
+    margin-bottom: 0.3em;
+}
+
+.pj-entry p {
+    margin-top: 0.3em;
+}
+
+#team-list {
+    list-style-type: none;
+    font-size: 0.9em;
+    margin: 0em;
+    padding-left: 0.2em;
+}
+
+#bug-table th {
+    border-bottom: 1px solid #999;
+    padding: 0.5em 1em;
+}
+
+#bug-table td {
+    border-bottom: 1px solid #999;
+    padding: 0.5em 1em;
+}
+
+#bug-table {
+    border-top: 1px solid #999;
+    border-collapse: collapse;
+    background: #fff;
+}
